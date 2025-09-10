@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronnie Bartolay | Personal Website</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+
+    /* Navigation */
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff9800;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(to right, #ff9800, #f44336);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 1rem;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #f44336;
+    }
+
+    /* Resume */
+    .resume-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .resume-item ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+
+    /* Projects */
+    .projects-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .project-card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Contact */
+    .contact a {
+      color: #f44336;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <h1 class="logo">Ronnie Bartolay</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <!-- Profile Picture -->
+      <img src="ronnie1.jpg" alt="Profile picture of Ronnie Bartolay" class="profile-pic">
+      <h2>Hi, I'm Ronnie Bartolay</h2>
+      <p>
+        A third-year BS Computer Science student.  
+        By day, I code and explore the latest tech trends.  
+        By night, I’m a creative makeup artist, model, and pageant enthusiast.  
+      </p>
+      <p>Let’s connect and blend tech, art, and beauty into something inspiring!</p>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Outside academics, I enjoy playing volleyball, badminton, and reading documentaries.  
+      I’m passionate about communication, which I use daily and in entertainment settings.  
+    </p>
+    <p>
+      My experiences have shaped who I am today — joining pageants improved my confidence and public speaking, while competing in SCUAA volleyball tournaments taught me teamwork, discipline, and resilience.  
+    </p>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <div class="resume-item">
+      <h3>Education</h3>
+      <p>Bachelor of Science in Computer Science – DEBESMSCAT</p>
+    </div>
+    <div class="resume-item">
+      <h3>Skills</h3>
+      <ul>
+        <li>Programming & Problem-Solving</li>
+        <li>Makeup Artistry & Creativity</li>
+        <li>Communication & Public Speaking</li>
+        <li>Sportsmanship & Team Collaboration</li>
+      </ul>
+    </div>
+    <div class="resume-item">
+      <h3>Experience</h3>
+      <ul>
+        <li>Pageant Competitor – boosted confidence and communication</li>
+        <li>SCUAA Volleyball Player – teamwork, discipline, and leadership</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <p>Here are some highlights of my academic and creative works:</p>
+    <div class="projects-list">
+      <div class="project-card">
+        <img src="c:\Users\Lenovo\Downloads\cde671df-6974-4a4f-a79d-12fecb7cba18.jpg" alt="Screenshot of Canvas Painting">
+        <h3>Canvas Painting</h3>
+        <p>A creative artwork project where I expressed emotions and imagination through colors and strokes on canvas. This taught me patience and the value of artistic expression.</p>
+      </div>
+      <div class="project-card">
+        <img src="c:\Users\Lenovo\Downloads\284c575b-857d-4f31-9958-c794df7d1460.jpg" alt="Screenshot of Website Application">
+        <h3>Website Application</h3>
+        <p>Developed a simple website application using HTML and CSS, showcasing my technical skills and ability to design user-friendly interfaces.</p>
+      </div>
+      <div class="project-card">
+        <img src="c:\Users\Lenovo\Downloads\31bc1d8c-a8b1-44fe-944c-ac579cc5b890.jpg" alt="Mandala Art Design">
+        <h3>Mandala Art Design</h3>
+        <p>Designed intricate mandala patterns to symbolize balance and harmony. This project enhanced my creativity, focus, and appreciation for geometric art.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:bartolay003@gmail.com">bartolay003@gmail.com</a></p>
+    <p>Phone: <a href="tel:09641575021">09641575021</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ronnie Bartolay. All rights reserved.</p>
+  </footer>
+</body>
+</html>
